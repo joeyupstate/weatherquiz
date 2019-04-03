@@ -1,0 +1,61 @@
+
+/*font-family: 'Baloo Chettan', cursive;
+font-family: 'Patua One', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Alfa Slab One', cursive;
+*/
+html{
+    height:100%;
+    width:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+body{
+    height:100%;
+    width:100%;
+    margin:0;
+    font-family: 'Patua One', cursive;
+    
+}
+
+#container{
+    height:100%;
+    width:100%;
+    background:rgb(134, 94, 6);
+    display:flex;
+    flex-direction: column;
+  
+    align-items: center;
+    border:1px solid black;
+}
+
+#citydisplay{
+    margin-bottom:10%;
+    font-size:50px;
+    border:1px solid black;
+ 
+}
+
+.tempdisplay{
+    width:80%;
+    height:10%;
+    background:rgb(182, 109, 67);
+    margin:5%;
+    border-radius:  25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+    border:5px solid black;
+}
+
+#next{
+    height:5%;
+    width:20%;
+    border:1px solid black;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius:100%;
+    background:rgb(196, 161, 142);
+}
