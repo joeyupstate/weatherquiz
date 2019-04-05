@@ -7,8 +7,7 @@ font-family: 'Alfa Slab One', cursive;
 html{
     height:100%;
     width:100%;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
+    
 }
 body{
     height:100%;
@@ -17,45 +16,105 @@ body{
     font-family: 'Patua One', cursive;
     
 }
+#curtain{
+    height:100%;
+    width:100%;
+    z-index:3;
+    background:white;
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+#titlecontainer{
+    borer:1px solid black;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+
+
+#earth{
+    height:200px;
+    width:200px;
+   
+    
+
+}
+
+#title{
+    
+    font-size:38px;
+    margin-bottom:20%;
+    color:rgb(76, 88, 112);
+}
+
+#start{
+    height:50px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    : 1px solid black;
+  margin-top:20%;
+  background: rgb(76, 88, 112);
+  border-radius:10px;
+  color:white;
+}
 
 #container{
     height:100%;
     width:100%;
-    background:rgb(134, 94, 6);
+    background:white;
     display:flex;
     flex-direction: column;
   
     align-items: center;
     border:1px solid black;
+    z-index:2;
+  
 }
 
 #citydisplay{
     margin-bottom:10%;
-    font-size:50px;
-    border:1px solid black;
+    font-size:40px;
+    boder:1px solid black;
+    
  
 }
 
 .tempdisplay{
-    width:80%;
-    height:10%;
-    background:rgb(182, 109, 67);
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
     margin:5%;
     border-radius:  25px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-    border:5px solid black;
+   
 }
 
 #next{
     height:5%;
     width:20%;
-    border:1px solid black;
+    border:3px solid black;
+    border-color:rgb(76, 88, 112);
     display: flex;
     align-items:center;
     justify-content: center;
-    border-radius:100%;
-    background:rgb(196, 161, 142);
+    border-radius:10%;
+    background:white;
+    margin-top:10%;
 }
+
+
