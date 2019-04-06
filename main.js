@@ -17,7 +17,7 @@ function hey(){
 let randomCity = cities[Math.floor(Math.random() * cities.length)];
 cityDisplay.innerHTML = randomCity;
 //This is the total api link with the random city added
-let apiurl = 'http://api.openweathermap.org/data/2.5/weather?q=' + randomCity
+let apiurl = 'https://api.openweathermap.org/data/2.5/weather?q=' + randomCity
 + '&units=imperial&appid=fe38aa42989f5e2ebc9d4fca513c3117';
 //this retreives the data from the api
 fetch(apiurl)
