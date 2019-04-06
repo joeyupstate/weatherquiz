@@ -47,7 +47,34 @@
         <script src ="main.js"></script>
         <script src ="curtain.js"></script>
      
-      
+      <script>
+           $.fn.rotate = function(degrees, step, current) {
+            var self = $(this);
+            current = current || 0;
+            step = step ||0.5;
+            current += step;
+            self.css({
+                '-webkit-transform' : 'rotate(' + current + 'deg)',
+                '-moz-transform' : 'rotate(' + current + 'deg)',
+                '-ms-transform' : 'rotate(' + current + 'deg)',
+                'transform' : 'rotate(' + current + 'deg)'
+            });
+            if (current != degrees) {
+                setTimeout(function() {
+                    self.rotate(degrees, step, current);
+                }, 5);
+            }
+       
+        };
+
+       
+        /*This jquery makes the animation come to life */
+
+        $(document).ready(function() { $("#earth").rotate(-360); });
+
+        $("#start").click(function(){$("#curtain").fadeOut(1000);});
+        
+      </script>
      
     </body>
 </html>
