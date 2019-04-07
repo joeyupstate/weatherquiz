@@ -1,4 +1,7 @@
-
+let tempDisplaydiv1 = document.getElementById("tempdisplay1");
+let tempDisplaydiv2 = document.getElementById("tempdisplay2");
+let tempDisplaydiv3 = document.getElementById("tempdisplay3");
+let tempDisplaydiv4 = document.getElementById("tempdisplay4");
 let cityDisplay = document.getElementById("citydisplay");
 let tempDisplay1=document.getElementById("temp1");
 let tempDisplay2=document.getElementById("temp2");
@@ -45,7 +48,53 @@ tempDisplay4.innerHTML = randomArray[3];
         submit.addEventListener("click",hey);
 
 
+function addborder(){
+
+    this.style.border = "10px solid grey "
+    tempDisplaydiv2.style.border = "none";
+    tempDisplaydiv3.style.border = "none";
+    tempDisplaydiv4.style.border = "none";
+   tempDisplay1.style.color ="white";
+}
+
+function addborder2(){
+
+    this.style.border = "10px solid grey"
+    tempDisplaydiv1.style.border = "none";
+    tempDisplaydiv3.style.border = "none";
+    tempDisplaydiv4.style.border = "none";
+    tempDisplay2.style.color ="white";
+   
+}
+
+function addborder3(){
+
+    this.style.border = "10px solid grey"
+    tempDisplaydiv2.style.border = "none";
+    tempDisplaydiv1.style.border = "none";
+    tempDisplaydiv4.style.border = "none";
+    tempDisplay3.style.color ="white";
+   
+}
+
+function addborder4(){
+
+    this.style.border = "10px solid grey"
+    tempDisplaydiv2.style.border = "none";
+    tempDisplaydiv3.style.border = "none";
+    tempDisplaydiv1.style.border = "none";
+    tempDisplay4.style.color ="white";
+   
+}
 
 
 
-    
+
+
+
+tempDisplaydiv1.addEventListener("click", addborder);
+tempDisplaydiv2.addEventListener("click", addborder2);
+tempDisplaydiv3.addEventListener("click", addborder3);
+tempDisplaydiv4.addEventListener("click", addborder4);
+
+

@@ -22,7 +22,7 @@ body{
     z-index:3;
     background:white;
     position: absolute;
-    display:flex;
+    display:none;
     justify-content: center;
     align-items: center;
     
@@ -91,7 +91,7 @@ body{
  
 }
 
-.tempdisplay{
+#tempdisplay1{
     width:70%;
     height:7%;
     background:rgb(76, 88, 112);
@@ -101,7 +101,46 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-   
+   border-color: white;
+}
+
+#tempdisplay2{
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
+    margin:5%;
+    border-radius:  25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+   border-color: white;
+}
+
+#tempdisplay3{
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
+    margin:5%;
+    border-radius:  25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+   border-color: white;
+}
+
+#tempdisplay4{
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
+    margin:5%;
+    border-radius:  25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+   border-color: white;
 }
 
 #next{
