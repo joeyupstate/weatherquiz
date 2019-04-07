@@ -1,3 +1,4 @@
+let startGame = document.getElementById("start");
 let tempDisplaydiv1 = document.getElementById("tempdisplay1");
 let tempDisplaydiv2 = document.getElementById("tempdisplay2");
 let tempDisplaydiv3 = document.getElementById("tempdisplay3");
@@ -42,8 +43,9 @@ tempDisplay4.innerHTML = randomArray[3];
     });
  
 
+}
 
-        }
+        startGame.addEventListener("click",hey);
 
         submit.addEventListener("click",hey);
 
