@@ -132,6 +132,7 @@ body{
     position:absolute;
     left:200px;
     top:155px;
+    color:black;
    
 }
 
@@ -139,6 +140,7 @@ body{
     position:absolute;
     left:200px;
     top:245px;
+    color:black;
    
 }
 
@@ -146,12 +148,14 @@ body{
     position:absolute;
     left:200px;
     top:340px;
+    color:black;
    
 }
 #temp4{
     position:absolute;
     left:200px;
     top:430px;
+    color:black;
    
 }
 
