@@ -1,9 +1,11 @@
 let startGame = document.getElementById("start");
-let tempDisplaydiv1 = document.getElementById("tempdisplay1");
-let tempDisplaydiv2 = document.getElementById("tempdisplay2");
-let tempDisplaydiv3 = document.getElementById("tempdisplay3");
-let tempDisplaydiv4 = document.getElementById("tempdisplay4");
+let container = document.getElementById("container");
+let tempDisplaydiv = document.getElementsByClassName("tempdisplay");
 let cityDisplay = document.getElementById("citydisplay");
+let radio1=document.getElementById("radio1");
+let radio2=document.getElementById("radio2")
+let radio3=document.getElementById("radio3")
+let radio4=document.getElementById("radio4")
 let tempDisplay1=document.getElementById("temp1");
 let tempDisplay2=document.getElementById("temp2");
 let tempDisplay3=document.getElementById("temp3");
@@ -13,7 +15,7 @@ let tempArray1 = [30,30.1,30.2,30.3,];
 let tempArray2 = [40,42.3,43,44,45.4,44.34];
 let tempArray3 = [50,23,60,61,66,32,44.6,48];
 let submit = document.getElementById("next");
-const cities = ["Dallas,us","Austin,us","Houston,us","Atlanta,us","Chicago,us","Charlotte,us","Memphis,us","Nashville,us","Cleveland,us","Detroit,us","Boston,us","Albany,us","Buffalo,us","Philadelphia,us","Orlando,us","Miami,us","Tampa,us","Jacksonville,us","Charleston,us","Tallahassee,us","Savannah,us","Baltimore,us","Washington,us","Omaha,us","Los Angeles,us","Fresno,us","San Diego,us","San Francisco,us","Seattle,us","Portland,us","Denver,us","San Antonio,us","New Orleans,us","New York,us","Richmond,us","Sacramento,us","Phoenix,us","Reno,us","Las Vegas,us","Salt Lake City,us","Kansas City,us","Lousville,us","Columbus,us","Fort Worth,us",];
+const cities = ["Dallas,us","Austin,us","Houston,us","Atlanta,us","Chicago,us","Charlotte,us","Memphis,us","Nashville,us","Cleveland,us","Detroit,us","Boston,us","Albany,us","Buffalo,us","Philadelphia,us","Orlando,us","Miami,us","Tampa,us","Jacksonville,us","Charleston,us","Tallahassee,us","Savannah,us","Baltimore,us","Washington,us","Omaha,us","Los Angeles,us","Fresno,us","San Diego,us","San Francisco,us","Seattle,us","Portland,us","Denver,us","San Antonio,us","New Orleans,us","New York,us","Richmond,us","Sacramento,us","Phoenix,us","Reno,us","Las Vegas,us","Salt Lake City,us","Kansas City,us","Louisville,us","Columbus,us","Fort Worth,us",];
 
 function hey(){
     
@@ -40,63 +42,22 @@ tempDisplay2.innerHTML = randomArray[1];
 tempDisplay3.innerHTML = randomArray[2];
 tempDisplay4.innerHTML = randomArray[3];
 
+if(radio1.checked == true){
+myyf();
+}
+
     });
  
 
 }
-
+//these both start the game
         startGame.addEventListener("click",hey);
 
         submit.addEventListener("click",hey);
 
 
-function addborder(){
-
-    this.style.border = "10px solid grey "
-    tempDisplaydiv2.style.border = "none";
-    tempDisplaydiv3.style.border = "none";
-    tempDisplaydiv4.style.border = "none";
-   tempDisplay1.style.color ="white";
-}
-
-function addborder2(){
-
-    this.style.border = "10px solid grey"
-    tempDisplaydiv1.style.border = "none";
-    tempDisplaydiv3.style.border = "none";
-    tempDisplaydiv4.style.border = "none";
-    tempDisplay2.style.color ="white";
-   
-}
-
-function addborder3(){
-
-    this.style.border = "10px solid grey"
-    tempDisplaydiv2.style.border = "none";
-    tempDisplaydiv1.style.border = "none";
-    tempDisplaydiv4.style.border = "none";
-    tempDisplay3.style.color ="white";
-   
-}
-
-function addborder4(){
-
-    this.style.border = "10px solid grey"
-    tempDisplaydiv2.style.border = "none";
-    tempDisplaydiv3.style.border = "none";
-    tempDisplaydiv1.style.border = "none";
-    tempDisplay4.style.color ="white";
-   
-}
-
-
-
-
-
-
-tempDisplaydiv1.addEventListener("click", addborder);
-tempDisplaydiv2.addEventListener("click", addborder2);
-tempDisplaydiv3.addEventListener("click", addborder3);
-tempDisplaydiv4.addEventListener("click", addborder4);
-
-
+        function myyf(){
+            if(tempDisplay1 == apirray){
+                alert("hey");
+            }
+        }
