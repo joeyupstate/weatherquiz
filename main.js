@@ -20,6 +20,9 @@ let next = document.getElementById("next");
 let submit = document.getElementById("check");
 const cities = ["Dallas,us","Austin,us","Houston,us","Atlanta,us","Chicago,us","Charlotte,us","Memphis,us","Nashville,us","Cleveland,us","Detroit,us","Boston,us","Albany,us","Buffalo,us","Philadelphia,us","Orlando,us","Miami,us","Tampa,us","Jacksonville,us","Charleston,us","Tallahassee,us","Savannah,us","Baltimore,us","Washington,us","Omaha,us","Los Angeles,us","Fresno,us","San Diego,us","San Francisco,us","Seattle,us","Portland,us","Denver,us","San Antonio,us","New Orleans,us","New York,us","Richmond,us","Sacramento,us","Phoenix,us","Reno,us","Las Vegas,us","Salt Lake City,us","Kansas City,us","Louisville,us","Columbus,us","Fort Worth,us",];
 
+let wrongCurtain = document.getElementById("wrongcurtain");
+let replay =document.getElementById("playagain");
+
 
     
     //This generates a random city
@@ -96,16 +99,18 @@ else{ radio1.checked = false;
     radio3.checked = false;
     radio4.checked = false;
                                 }
-
-                                if(correct.style.display == "flex"){
+//removing the result -wrong /correct
+ if(correct.style.display == "flex"){
                                     correct.style.display = "none";
                                 }
-                                else(correct.style.display == "none");
-                               
-                                if(next.style.display == "flex"){
-                                    submit.style.display = "flex";
-                                    next.style.display = "none";
-                                }
+  else if (wrong.style.display == "none"){
+      wrong.style.diplay == "none";
+  }
+    //removing the next button                           
+  if(next.style.display == "flex"){
+              submit.style.display = "flex";
+         next.style.display = "none";
+  }
 });
 
 
@@ -139,7 +144,10 @@ function checkf(){
        submit.style.display="none";
        
    }
-    else{wrong.style.display = "flex"}
+    else{wrong.style.display = "flex"
+          wrongCurtain.style.display = "flex"
+       
+         }                              
 }
 
     
@@ -147,3 +155,11 @@ function checkf(){
         startGame.addEventListener("click",hey);
 
         next.addEventListener("click",hey);
+
+        //restart game
+
+        replay.addEventListener("click", refreshPage);
+        
+        function refreshPage(){
+            window.location.reload();
+          } 
