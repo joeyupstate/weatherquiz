@@ -132,7 +132,7 @@ body{
     position:absolute;
     left:200px;
     top:155px;
-    color:black;
+    color:rgb(2, 2, 2);
    
 }
 
@@ -164,6 +164,19 @@ body{
     width:20%;
     border:3px solid black;
     border-color:rgb(76, 88, 112);
+    display: none;
+    align-items:center;
+    justify-content: center;
+    border-radius:10%;
+    background:white;
+    margin-top:10%;
+}
+
+#check{
+    height:5%;
+    width:20%;
+    border:3px solid black;
+    border-color:rgb(76, 88, 112);
     display: flex;
     align-items:center;
     justify-content: center;
@@ -173,3 +186,18 @@ body{
 }
 
 
+#correct{
+    display:none;
+    color:red;
+    position: absolute;
+    top:80px;
+    font-size:30px;
+}
+
+#wrong{
+    display:none;
+    color:red;
+    position: absolute;
+    top:80px;
+    font-size:30px;
+}

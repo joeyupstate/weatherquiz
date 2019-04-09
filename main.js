@@ -1,5 +1,7 @@
 let startGame = document.getElementById("start");
 let container = document.getElementById("container");
+let correct=document.getElementById("correct");
+let wrong =document.getElementById("wrong");
 let tempDisplaydiv = document.getElementsByClassName("tempdisplay");
 let cityDisplay = document.getElementById("citydisplay");
 let radio1=document.getElementById("radio1");
@@ -14,7 +16,8 @@ let but = document.getElementById("cc");
 let tempArray1 = [30,30.1,30.2,30.3,];
 let tempArray2 = [40,42.3,43,44,45.4,44.34];
 let tempArray3 = [50,23,60,61,66,32,44.6,48];
-let submit = document.getElementById("next");
+let next = document.getElementById("next");
+let submit = document.getElementById("check");
 const cities = ["Dallas,us","Austin,us","Houston,us","Atlanta,us","Chicago,us","Charlotte,us","Memphis,us","Nashville,us","Cleveland,us","Detroit,us","Boston,us","Albany,us","Buffalo,us","Philadelphia,us","Orlando,us","Miami,us","Tampa,us","Jacksonville,us","Charleston,us","Tallahassee,us","Savannah,us","Baltimore,us","Washington,us","Omaha,us","Los Angeles,us","Fresno,us","San Diego,us","San Francisco,us","Seattle,us","Portland,us","Denver,us","San Antonio,us","New Orleans,us","New York,us","Richmond,us","Sacramento,us","Phoenix,us","Reno,us","Las Vegas,us","Salt Lake City,us","Kansas City,us","Louisville,us","Columbus,us","Fort Worth,us",];
 
 
@@ -94,24 +97,53 @@ else{ radio1.checked = false;
     radio4.checked = false;
                                 }
 
+                                if(correct.style.display == "flex"){
+                                    correct.style.display = "none";
+                                }
+                                else(correct.style.display == "none");
+                               
+                                if(next.style.display == "flex"){
+                                    submit.style.display = "flex";
+                                    next.style.display = "none";
+                                }
 });
+
+
+
 
 }
 
 
-function myf(){
-    if( radio1.checked == true && tempDisplay1.style.color == "rgb(5, 2, 2);")
-    {alert("hey1");}
-    if( radio2.checked == true && tempDisplay2.style.color == "rgb(5, 2, 2);")
-    {alert("hey2");}
-    if( radio3.checked == true && tempDisplay3.style.color == "rgb(5, 2, 2);")
-    {alert("hey3");}
-    if( radio4.checked == true && tempDisplay4.style.color == "rgb(5, 2, 2);")
-    {alert("hey4");}
+function checkf(){
+    if( radio1.checked == true && tempDisplay1.style.color == "white")
+    {correct.style.display = "flex";
+ next.style.display ="flex";
+    submit.style.display="none";
+    
+}
+    else if( radio2.checked == true && tempDisplay2.style.color == "white")
+    {correct.style.display = "flex";
+    next.style.display ="flex";
+       submit.style.display="none";
+       
+   }
+    else if( radio3.checked == true && tempDisplay3.style.color == "white")
+    {correct.style.display = "flex";
+    next.style.display ="flex";
+       submit.style.display="none";
+       
+   }
+    else if( radio4.checked == true && tempDisplay4.style.color == "white")
+    {correct.style.display = "flex";
+    next.style.display ="flex";
+       submit.style.display="none";
+       
+   }
+    else{wrong.style.display = "flex"}
 }
 
     
 //these both start the game
         startGame.addEventListener("click",hey);
 
-        submit.addEventListener("click",hey);
+        next.addEventListener("click",hey);
