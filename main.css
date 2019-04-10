@@ -49,6 +49,7 @@ body{
 
 #wrongcurtain h1{
     color:red;
+    font-size:50px;
 }
 
 #playagain{
@@ -89,8 +90,12 @@ body{
 #title{
     
     font-size:38px;
-    margin-bottom:20%;
+    margin-bottom:10px;
     color:rgb(76, 88, 112);
+}
+
+#subtitle{
+    margin-bottom:10%;
 }
 
 #start{
@@ -168,7 +173,7 @@ body{
     position:absolute;
     left:200px;
     top:155px;
-    color:rgb(2, 2, 2);
+    color:whitesmoke;  //
    
 }
 
@@ -176,7 +181,7 @@ body{
     position:absolute;
     left:200px;
     top:245px;
-    color:black;
+    color:WhiteSmoke;
    
 }
 
@@ -184,14 +189,14 @@ body{
     position:absolute;
     left:200px;
     top:340px;
-    color:black;
+    color:WhiteSmoke;
    
 }
 #temp4{
     position:absolute;
     left:200px;
     top:430px;
-    color:black;
+    color:WhiteSmoke;
    
 }
 

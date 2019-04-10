@@ -13,12 +13,12 @@ let tempDisplay2=document.getElementById("temp2");
 let tempDisplay3=document.getElementById("temp3");
 let tempDisplay4=document.getElementById("temp4");
 let but = document.getElementById("cc");
-let tempArray1 = [30,30.1,30.2,30.3,];
+let tempArray1 = [30,30.1,30.2,30.3,49.3,49.9,57,58,59,81,];
 let tempArray2 = [40,42.3,43,44,45.4,44.34];
-let tempArray3 = [50,23,60,61,66,32,44.6,48];
+let tempArray3 = [50,23,60,61,66,32,44.6,48,77.1,45.78,77.56,78.9,72,78];
 let next = document.getElementById("next");
 let submit = document.getElementById("check");
-const cities = ["Dallas,us","Austin,us","Houston,us","Atlanta,us","Chicago,us","Charlotte,us","Memphis,us","Nashville,us","Cleveland,us","Detroit,us","Boston,us","Albany,us","Buffalo,us","Philadelphia,us","Orlando,us","Miami,us","Tampa,us","Jacksonville,us","Charleston,us","Tallahassee,us","Savannah,us","Baltimore,us","Washington,us","Omaha,us","Los Angeles,us","Fresno,us","San Diego,us","San Francisco,us","Seattle,us","Portland,us","Denver,us","San Antonio,us","New Orleans,us","New York,us","Richmond,us","Sacramento,us","Phoenix,us","Reno,us","Las Vegas,us","Salt Lake City,us","Kansas City,us","Louisville,us","Columbus,us","Fort Worth,us",];
+const cities = ["Dallas,us","Austin,us","Houston,us","Atlanta,us","Chicago,us","Charlotte,us","Memphis,us","Nashville,us","Cleveland,us","Detroit,us","Boston,us","Albany,us","Buffalo,us","Philadelphia,us","Orlando,us","Miami,us","Tampa,us","Jacksonville,us","Charleston,us","Tallahassee,us","Savannah,us","Baltimore,us","Washington,us","Omaha,us","Los Angeles,us","Fresno,us","San Diego,us","San Francisco,us","Seattle,us","Portland,us","Denver,us","San Antonio,us","New Orleans,us","New York,us","Richmond,us","Sacramento,us","Phoenix,us","Reno,us","Las Vegas,us","Salt Lake City,us","Kansas City,us","Louisville,us","Columbus,us","Fort Worth,us","Springfield,us","London,uk","Glasgow,uk","Manchester,uk","Brighton,uk","Birmingham,uk","Billings,us","Spokane,us","Naples,us","Asheville,us","Raliegh,us","Pittsburgh,us","Erie,us","Indianapolis,us","Lincoln,us","Tucson,us","Santa Barbara,us","Oakland,us","Yuma,us","Bristol,uk","Liverpool,us","Bakersfield,us"];
 
 let wrongCurtain = document.getElementById("wrongcurtain");
 let replay =document.getElementById("playagain");
@@ -51,35 +51,35 @@ tempDisplay3.innerHTML = randomArray[2];
 tempDisplay4.innerHTML = randomArray[3];
 
 
-
+//whitesmoke ghost white
 if(tempDisplay1.innerHTML == apirray){
-    tempDisplay1.style.color = "white";
-    tempDisplay2.style.color = "black";
-tempDisplay3.style.color = "black";
-tempDisplay4.style.color = "black";
+    tempDisplay1.style.color = "whitesmoke";
+    tempDisplay2.style.color = "GhostWhite";
+tempDisplay3.style.color = "GhostWhite";
+tempDisplay4.style.color = "GhostWhite";
 }
 else if(tempDisplay2.innerHTML == apirray){
-    tempDisplay2.style.color = "white";
-    tempDisplay1.style.color = "black";
-tempDisplay3.style.color = "black";
-tempDisplay4.style.color = "black";
+    tempDisplay2.style.color = "whitesmoke";
+    tempDisplay1.style.color = "GhostWhite";
+tempDisplay3.style.color = "GhostWhite";
+tempDisplay4.style.color = "GhostWhite";
 }
 else if(tempDisplay3.innerHTML == apirray){
-    tempDisplay3.style.color = "white";
-    tempDisplay1.style.color = "black";
-tempDisplay2.style.color = "black";
-tempDisplay4.style.color = "black";
+    tempDisplay3.style.color = "whitesmoke";
+    tempDisplay1.style.color = "GhostWhite";
+tempDisplay2.style.color = "GhostWhite";
+tempDisplay4.style.color = "GhostWhite";
 }
 else if(tempDisplay4.innerHTML == apirray){
-    tempDisplay4.style.color = "white";
-    tempDisplay2.style.color = "black";
-tempDisplay3.style.color = "black";
-tempDisplay1.style.color = "black";
+    tempDisplay4.style.color = "whitesmoke";
+    tempDisplay2.style.color = "GhostWhite";
+tempDisplay3.style.color = "GhostWhite";
+tempDisplay1.style.color = "GhostWhite";
 }
-else{tempDisplay1.style.color = "black";
-    tempDisplay2.style.color = "black";
-tempDisplay3.style.color = "black";
-tempDisplay4.style.color = "black";}
+else{tempDisplay1.style.color = "GhostWhite";
+    tempDisplay2.style.color = "GhostWhite";
+tempDisplay3.style.color = "GhostWhite";
+tempDisplay4.style.color = "GhostWhite";}
 
 if(radio1.checked ==true){
     radio1.checked = false;
@@ -120,32 +120,32 @@ else{ radio1.checked = false;
 
 
 function checkf(){
-    if( radio1.checked == true && tempDisplay1.style.color == "white")
+    if( radio1.checked == true && tempDisplay1.style.color == "whitesmoke")
     {correct.style.display = "flex";
  next.style.display ="flex";
     submit.style.display="none";
     
 }
-    else if( radio2.checked == true && tempDisplay2.style.color == "white")
+    else if( radio2.checked == true && tempDisplay2.style.color == "whitesmoke")
     {correct.style.display = "flex";
     next.style.display ="flex";
        submit.style.display="none";
        
    }
-    else if( radio3.checked == true && tempDisplay3.style.color == "white")
+    else if( radio3.checked == true && tempDisplay3.style.color == "whitesmoke")
     {correct.style.display = "flex";
     next.style.display ="flex";
        submit.style.display="none";
        
    }
-    else if( radio4.checked == true && tempDisplay4.style.color == "white")
+    else if( radio4.checked == true && tempDisplay4.style.color == "whitesmoke")
     {correct.style.display = "flex";
     next.style.display ="flex";
        submit.style.display="none";
        
    }
-    else{wrong.style.display = "flex"
-          wrongCurtain.style.display = "flex"
+    else{
+          wrongCurtain.style.display = "flex";
        
          }                              
 }
