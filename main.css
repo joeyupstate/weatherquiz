@@ -153,7 +153,7 @@ body{
     width:100%;
     opacity:0;
 }
-.tempdisplay{
+#tempdisplay1{
     width:70%;
     height:7%;
     background:rgb(76, 88, 112);
@@ -168,6 +168,52 @@ body{
   
    
 }
+#tempdisplay2{
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
+    margin:5%;
+    border-radius:  25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+   border-color: white;
+  
+   
+}
+#tempdisplay3{
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
+    margin:5%;
+    border-radius:  25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+   border-color: white;
+  
+   
+}
+#tempdisplay4{
+    width:70%;
+    height:7%;
+    background:rgb(76, 88, 112);
+    margin:5%;
+    border-radius:  25px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+   border-color: white;
+  
+   
+}
+
 
 #temp1{
     position:absolute;

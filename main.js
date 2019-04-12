@@ -2,7 +2,10 @@ let startGame = document.getElementById("start");
 let container = document.getElementById("container");
 let correct=document.getElementById("correct");
 let wrong =document.getElementById("wrong");
-let tempDisplaydiv = document.getElementsByClassName("tempdisplay");
+let tempDisplaydiv1 = document.getElementById("tempdisplay1");
+let tempDisplaydiv2 = document.getElementById("tempdisplay2");
+let tempDisplaydiv3 = document.getElementById("tempdisplay3");
+let tempDisplaydiv4 = document.getElementById("tempdisplay4");
 let cityDisplay = document.getElementById("citydisplay");
 let radio1=document.getElementById("radio1");
 let radio2=document.getElementById("radio2")
@@ -147,10 +150,37 @@ function checkf(){
     else{
           wrongCurtain.style.display = "flex";
        
-         }                              
+         }
+if(tempDisplaydiv1.style.background == "green")     {
+    tempDisplaydiv1.style.background = "rgb(76, 88, 112)"
+
+} 
+else if(tempDisplaydiv2.style.background == "green")     {
+    tempDisplaydiv2.style.background = "rgb(76, 88, 112)"
+
+}   
+else if(tempDisplaydiv3.style.background == "green")     {
+    tempDisplaydiv3.style.background = "rgb(76, 88, 112)"
+
+}   
+else if(tempDisplaydiv4.style.background == "green")     {
+    tempDisplaydiv4.style.background = "rgb(76, 88, 112)"
+
+}                           
 }
 
-    
+
+//Makes the temp displaydiv colored
+
+function pickAnswer(){
+    this.style.background = "green";
+   
+}
+
+tempDisplaydiv1.addEventListener("click", pickAnswer);
+tempDisplaydiv2.addEventListener("click", pickAnswer);
+tempDisplaydiv3.addEventListener("click", pickAnswer);
+tempDisplaydiv4.addEventListener("click", pickAnswer);
 //these both start the game
         startGame.addEventListener("click",hey);
 
