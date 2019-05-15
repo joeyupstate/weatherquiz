@@ -1,4 +1,4 @@
-let startGame = document.getElementById("start");
+ let startGame = document.getElementById("start");
 let container = document.getElementById("container");
 let correct=document.getElementById("correct");
 let wrong =document.getElementById("wrong");

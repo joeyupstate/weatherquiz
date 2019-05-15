@@ -6,14 +6,13 @@ font-family: 'Alfa Slab One', cursive;
 html{
     height:100%;
     width:100%;
-    
 }
 body{
     height:100%;
     width:100%;
     margin:0;
     font-family: 'Patua One', cursive;
-    
+    background:white;
 }
 #curtain{
     height:100%;
@@ -58,7 +57,7 @@ body{
         display:flex;
         justify-content: center;
         align-items: center;
-        : 1px solid black;
+    
       margin-top:20%;
       background: rgb(76, 88, 112);
       border-radius:10px;
@@ -113,12 +112,12 @@ body{
 #container{
     height:100%;
     width:100%;
-    background:white;
+
     display:flex;
     flex-direction: column;
-  
+    background:white;
     align-items: center;
-    border:1px solid black;
+    
     z-index:2;
   
 }
@@ -282,4 +281,176 @@ body{
     position: absolute;
     top:80px;
     font-size:30px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #title{
+    
+        font-size:68px;
+        margin-bottom:10px;
+        color:rgb(76, 88, 112);
+    }
+    
+#earth{
+    height:400px;
+    width:400px;
+   
+    
+
+}
+    #subtitle{
+        margin-bottom:10%;
+    }
+    
+    #start{
+        height:150px;
+        width:300px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        : 1px solid black;
+      margin-top:10%;
+      background: rgb(76, 88, 112);
+      border-radius:10px;
+      color:white;
+    }
+    #container{
+        height:100%;
+        width:100%;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        background:white;
+        align-items: center;
+        
+        z-index:2;
+      
+    }
+
+    #citydisplay{
+        margin-bottom:1%;
+        font-size:40px;
+        boder:1px solid black;
+        
+     
+    }
+    
+    #tempdisplay1{
+        max-width:70%;
+        min-height:7%;
+        background:rgb(76, 88, 112);
+        border-radius:  25px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:row;
+        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+       border-color: white;
+      
+       
+    }
+    #tempdisplay2{
+        max-width:70%;
+        min-height:7%;
+        background:rgb(76, 88, 112);
+ 
+        border-radius:  25px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:row;
+        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+       border-color: white;
+      
+       
+    }
+    #tempdisplay3{
+        max-width:70%;
+        min-height:7%;
+        background:rgb(76, 88, 112);
+      
+        border-radius:  25px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:row;
+        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+       border-color: white;
+      
+       
+    }
+    #tempdisplay4{
+        max-width:70%;
+        min-height:7%;
+        background:rgb(76, 88, 112);
+        
+        border-radius:  25px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction:row;
+        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+       border-color: white;
+      
+       
+    }
+
+    #temp1{
+        position:relative;
+        left:50%;
+        color:whitesmoke;  
+     
+       
+    }
+    
+    #temp2{
+        position:relative;
+        left:50%;
+        color:whitesmoke;  
+       
+    }
+    
+    #temp3{
+        position:relative;
+        left:50%;
+        color:whitesmoke;  
+       
+    }
+    #temp4{
+        position:relative;
+        left:50%;
+        color:whitesmoke;  
+       
+    }
+
+    
+#check{
+    height:100px;
+    width:200px;
+    border:3px solid black;
+    border-color:rgb(76, 88, 112);
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius:10px;
+    background:white;
+    margin-top:1%;
+}
+
+#correct{
+    display:none;
+    color:red;
+    position: absolute;
+    top:80px;
+    font-size:30px;
+}
+
+#wrong{
+    display:none;
+    color:red;
+    position: absolute;
+    top:80px;
+    font-size:30px;
+}
 }
