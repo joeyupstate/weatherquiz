@@ -7,6 +7,7 @@ html{
     height:100%;
     width:100%;
 }
+
 body{
     height:100%;
     width:100%;
@@ -14,6 +15,8 @@ body{
     font-family: 'Patua One', cursive;
     background:white;
 }
+
+/*This is the landing page with logo */
 #curtain{
     height:100%;
     width:100%;
@@ -23,70 +26,65 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    
-
-    
+    background:white;
 }
 
+/* When you get an answer wrong this page appears */
 #wrongcurtain{
     height:100%;
     width:100%;
     z-index:4;
     background:white;
-    position: absolute;
+    position: fixed;
     display:none;
+    top:0;
+    bottom:0;
     justify-content: center;
     align-items: center;
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    
-
-    
 }
 
 #wrongcurtain h1{
     color:red;
     font-size:50px;
+
 }
 
 #playagain{
+    height:50px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20%;
+    background: rgb(76, 88, 112);
+    border-radius:10px;
+    color:white;
+}
 
-        height:50px;
-        width:100px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    
-      margin-top:20%;
-      background: rgb(76, 88, 112);
-      border-radius:10px;
-      color:white;
-    }
+#playagain:hover{
+    cursor: pointer;
+}
     
 
 #titlecontainer{
-    borer:1px solid black;
     width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
+    background:white;
 }
 
-
-
+/* The spinning logo */
 #earth{
     height:200px;
     width:200px;
-   
-    
-
 }
 
 #title{
-    
     font-size:38px;
     margin-bottom:10px;
     color:rgb(76, 88, 112);
@@ -102,144 +100,157 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    : 1px solid black;
-  margin-top:20%;
-  background: rgb(76, 88, 112);
-  border-radius:10px;
-  color:white;
+    margin-top:20%;
+    background: rgb(76, 88, 112);
+    border-radius:10px;
+    color:white;
 }
+
+#start:hover{
+    cursor: pointer;
+}
+
+/* Main area with City Display and Questions */
 
 #container{
     height:100%;
     width:100%;
-
     display:flex;
     flex-direction: column;
     background:white;
     align-items: center;
-    
     z-index:2;
-  
 }
-
+/* Where city is shown */
 #citydisplay{
     margin-bottom:10%;
     font-size:40px;
-    boder:1px solid black;
-    
- 
 }
+
+/* These are hidden under the temp inside the questions */
 #radio1{
     height:100%;
     width:100%;
     opacity:0;
-
-    
 }
+
 #radio2{
     height:100%;
     width:100%;
     opacity:0;
 }
+
 #radio3{
     height:100%;
     width:100%;
     opacity:0;
 }
+
 #radio4{
     height:100%;
     width:100%;
     opacity:0;
 }
+
+/* These are the long divs that hold the temp */
 #tempdisplay1{
     width:70%;
     height:7%;
     background:rgb(76, 88, 112);
     margin:5%;
     border-radius:  25px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:row;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
     box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-   border-color: white;
-  
-   
+    border-color: white;
 }
+#tempdisplay1:hover{
+    cursor: pointer;
+}
+
 #tempdisplay2{
     width:70%;
     height:7%;
     background:rgb(76, 88, 112);
     margin:5%;
     border-radius:  25px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:row;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
     box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-   border-color: white;
-  
-   
+    border-color: white;
 }
+
+#tempdisplay2:hover{
+    cursor: pointer;
+}
+
 #tempdisplay3{
     width:70%;
     height:7%;
     background:rgb(76, 88, 112);
     margin:5%;
     border-radius:  25px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:row;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
     box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-   border-color: white;
-  
-   
+    border-color: white;
 }
+
+#tempdisplay3:hover{
+    cursor: pointer;
+}
+
 #tempdisplay4{
     width:70%;
     height:7%;
     background:rgb(76, 88, 112);
     margin:5%;
     border-radius:  25px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction:row;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
     box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-   border-color: white;
-  
-   
+    border-color: white;
 }
 
+#tempdisplay4:hover{
+    cursor: pointer;
+}
+
+/* The actual paragraphs that get turned into the temps using "inner.html" */
 
 #temp1{
     position:relative;
     left:50%;
     color:whitesmoke;  
-   
 }
 
 #temp2{
     position:relative;
     left:50%;
     color:whitesmoke;  
-   
 }
 
 #temp3{
     position:relative;
     left:50%;
     color:whitesmoke;  
-   
 }
+
 #temp4{
     position:relative;
     left:50%;
     color:whitesmoke;  
-   
 }
 
+/* Next button */
 #next{
     height:5%;
     width:20%;
@@ -253,6 +264,7 @@ body{
     margin-top:10%;
 }
 
+/*This is the submit button */
 #check{
     height:5%;
     width:20%;
@@ -266,7 +278,11 @@ body{
     margin-top:10%;
 }
 
+#check:hover{
+    cursor: pointer;
+}
 
+/* Appears Durring Correct Answer */
 #correct{
     display:none;
     color:red;
@@ -275,6 +291,7 @@ body{
     font-size:30px;
 }
 
+/* Appears durring wrong Answer */
 #wrong{
     display:none;
     color:red;
@@ -285,148 +302,162 @@ body{
 
 @media only screen and (min-width: 1100px) {
 
-    #title{
+    html{
+        height:100%;
+        width:100%;
+    }
+
+    body{
+        height:100%;
+        width:100%;
+        margin:0;
+        font-family: 'Patua One', cursive;
+        background:white;
+    }
+
+    #curtain{
+        height:100%;
+        width:100%;
+        z-index:3;
+        background:white;
+        position: fixed;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background:white;
+        top:0;
+        left:0;
+    }
     
-        font-size:68px;
-        margin-bottom:10px;
+
+    #title{
+        font-size:58px;
+        margin-bottom:0;
         color:rgb(76, 88, 112);
     }
     
-#earth{
-    height:400px;
-    width:400px;
-   
-    
+    #earth{
+        height:250px;
+        width:250px;
+    }
 
-}
     #subtitle{
-        margin-bottom:10%;
+        margin-bottom:5%;
     }
     
     #start{
-        height:150px;
-        width:300px;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        : 1px solid black;
-      margin-top:10%;
-      background: rgb(76, 88, 112);
-      border-radius:10px;
-      color:white;
+    height:40px;
+    width:150px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5%;
+    background: rgb(76, 88, 112);
+    border-radius:10px;
+    color:white;
     }
+
     #container{
-        height:100%;
-        width:100%;
-        justify-content: center;
-        display:flex;
-        flex-direction: column;
-        background:white;
-        align-items: center;
-        
-        z-index:2;
-      
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr ;
+    grid-auto-rows: 100px;
+    margin-top: 40px;
+    grid-gap: 10px;
+    display: grid;
+    z-index:2;
     }
 
     #citydisplay{
-        margin-bottom:1%;
-        font-size:40px;
-        boder:1px solid black;
-        
-     
+    margin-top:0%;
+    font-size:40px;
+    margin:0 auto;
     }
     
     #tempdisplay1{
-        max-width:70%;
-        min-height:7%;
-        background:rgb(76, 88, 112);
-        border-radius:  25px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction:row;
-        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-       border-color: white;
-      
-       
+    max-width:500px;
+    min-height:50px;
+    background:rgb(76, 88, 112);
+    border-radius:  25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+    border-color: white;
+    margin:0 auto;
     }
+
     #tempdisplay2{
-        max-width:70%;
-        min-height:7%;
-        background:rgb(76, 88, 112);
- 
-        border-radius:  25px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction:row;
-        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-       border-color: white;
-      
-       
+    max-width:500px;
+    min-height:50px;
+    background:rgb(76, 88, 112);
+    border-radius:  25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+    border-color: white;
+    margin:0 auto;
     }
+
     #tempdisplay3{
-        max-width:70%;
-        min-height:7%;
-        background:rgb(76, 88, 112);
-      
-        border-radius:  25px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction:row;
-        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-       border-color: white;
-      
-       
+    max-width:500px;
+    min-height:50px;
+    background:rgb(76, 88, 112);
+    border-radius:  25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+    border-color: white;
+    margin:0 auto;
     }
+
+
     #tempdisplay4{
-        max-width:70%;
-        min-height:7%;
-        background:rgb(76, 88, 112);
-        
-        border-radius:  25px;
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction:row;
-        box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
-       border-color: white;
-      
-       
+    max-width:500px;
+    min-height:50px;
+    background:rgb(76, 88, 112);
+    border-radius:  25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    box-shadow: 0 20px 40px 0px rgba(0,0,0,0.3);
+    border-color: white;
+    margin:0 auto;
     }
 
     #temp1{
-        position:relative;
-        left:50%;
-        color:whitesmoke;  
-     
-       
-    }
+    position:relative;
+    left:50%;
+    color:whitesmoke;  
+     }
     
     #temp2{
-        position:relative;
-        left:50%;
-        color:whitesmoke;  
-       
+    position:relative;
+    left:50%;
+    color:whitesmoke;  
     }
     
     #temp3{
-        position:relative;
-        left:50%;
-        color:whitesmoke;  
-       
+    position:relative;
+    left:50%;
+    color:whitesmoke;  
     }
+
     #temp4{
-        position:relative;
-        left:50%;
-        color:whitesmoke;  
-       
+    position:relative;
+    left:50%;
+    color:whitesmoke;  
     }
 
     
-#check{
-    height:100px;
+    #check{
+    height:50px;
     width:200px;
     border:3px solid black;
     border-color:rgb(76, 88, 112);
@@ -435,16 +466,31 @@ body{
     justify-content: center;
     border-radius:10px;
     background:white;
-    margin-top:1%;
-}
+    margin-top:0;
+    margin:0 auto;
+    }
+
+    #next{
+    height:50px;
+    width:200px;
+    border:3px solid black;
+    border-color:rgb(76, 88, 112);
+    display: none;
+    align-items:center;
+    justify-content: center;
+    border-radius:10%;
+    background:white;
+    margin: 0 auto;
+    }
 
 #correct{
     display:none;
     color:red;
-    position: absolute;
-    top:80px;
+    position:absolute;
+    margin-left:45%;
+    margin-top:30px;
     font-size:30px;
-}
+    }
 
 #wrong{
     display:none;
@@ -453,4 +499,5 @@ body{
     top:80px;
     font-size:30px;
 }
+
 }
